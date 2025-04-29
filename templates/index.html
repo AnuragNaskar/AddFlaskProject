@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Add two numbers
+        </title>
+        <h3>Add two numbers</h3>
+    </head>
+    <body bgcolor="indigo">
+        <form method="POST">
+            <input type = "text" name = "num1" id = "num1" placeholder="Enter first number here" autocomplete="off" required>
+            <input type = "text" name = "num2" id = "num2" placeholder="Enter second number here" autocomplete="off" required>
+            <button type = "submit">Add</button>
+        </form>
+        {% if result is not none %}
+        <h4>Result: {{ result }}</h4>
+        {% endif %}
+    </body>
+</html>
